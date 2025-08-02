@@ -1,0 +1,17 @@
+@import './base.css';
+@import "tailwindcss";
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+}
+
+[data-theme='dark'] {
+  --bg-color: #121212;
+  --text-color: #f1f1f1;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
